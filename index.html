@@ -1,1 +1,104 @@
-<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>منصة المحامين</title><link rel="stylesheet" href="css/style.css"></head><body><h1>منصة المحامين</h1></body></html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>منصة المحامين | الرئيسية</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="container nav-wrapper">
+      <div class="logo-area">
+        <span class="logo-icon">⚖️</span>
+        <span class="logo-text">منصة المحامين</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="active">الرئيسية</a>
+        <a href="lawyers.html">استكشف المحامين</a>
+        <a href="login.html">تسجيل الدخول</a>
+        <a href="register.html" class="btn btn-outline">انضم كمحامٍ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>استشر أفضل المحامين<br/>بخطوات بسيطة وسريعة</h1>
+          <p>
+            اختر المحامي المناسب وفق التخصص والتقييم والمدينة، واطلب استشارة قانونية
+            كما تفعل في منصات الخدمات المستقلة.
+          </p>
+          <div class="hero-actions">
+            <a href="lawyers.html" class="btn btn-primary">تصفح المحامين الآن</a>
+            <a href="register.html" class="btn btn-ghost">سجّل كمحامٍ</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <strong id="statLawyers">+0</strong>
+              <span>محامٍ مسجّل</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>واجهة مبدئية قابلة للتطوير</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>كيف تعمل المنصة؟</h2>
+          <ol>
+            <li>تصفح قائمة المحامين حسب التخصص أو المدينة.</li>
+            <li>اطلع على النبذة والسيرة المختصرة لكل محامٍ.</li>
+            <li>اطلب تواصلاً أو استشارة (يتم تطوير الربط الخلفي لاحقًا).</li>
+          </ol>
+          <p class="hint">
+            هذه النسخة Front-end فقط، ومهيأة للربط لاحقًا بواجهة برمجية (API)
+            ونظام عضويات كامل مثل منصات العمل الحر.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">مجالات قانونية شائعة</h2>
+        <div class="tag-list">
+          <span class="tag">قضايا تجارية</span>
+          <span class="tag">قضايا عمالية</span>
+          <span class="tag">الأحوال الشخصية</span>
+          <span class="tag">العقود والاتفاقيات</span>
+          <span class="tag">الملكية الفكرية</span>
+          <span class="tag">الاستشارات النظامية</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container features-grid">
+        <div class="feature-card">
+          <h3>واجهة تشبه منصات الخدمات</h3>
+          <p>تصميم مستوحى من مواقع مثل مستقل وخمسات لسهولة الاستخدام.</p>
+        </div>
+        <div class="feature-card">
+          <h3>ملف لكل محامٍ</h3>
+          <p>اسم، تخصص، مدينة، وملخص خبرة في بطاقة واضحة.</p>
+        </div>
+        <div class="feature-card">
+          <h3>جاهزة للتطوير</h3>
+          <p>يمكن ربطها لاحقًا بنظام تسجيل، دفع، وحجز مواعيد حقيقي.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 منصة المحامين – نسخة تجريبية Front-end</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

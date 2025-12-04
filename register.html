@@ -1,1 +1,84 @@
-<!DOCTYPE html><html lang='ar' dir='rtl'><head><meta charset='UTF-8'><title>تسجيل محامٍ</title><link rel='stylesheet' href='css/style.css'></head><body><h1>تسجيل محامٍ</h1></body></html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تسجيل محامٍ | منصة المحامين</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="top-bar">
+  <div class="container nav-wrapper">
+    <div class="logo-area">
+      <span class="logo-icon">⚖️</span>
+      <span class="logo-text">منصة المحامين</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="lawyers.html">استكشف المحامين</a>
+      <a href="login.html">تسجيل الدخول</a>
+      <a href="register.html" class="btn btn-outline active-btn">انضم كمحامٍ</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page-main">
+  <div class="container auth-grid">
+    <section class="form-card">
+      <h1>تسجيل محامٍ جديد</h1>
+      <p class="muted">
+        سيتم حفظ بياناتك محليًا في المتصفح (LocalStorage) لأغراض العرض فقط في هذه النسخة التجريبية.
+      </p>
+
+      <form id="registerForm">
+        <label>
+          الاسم الكامل
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          البريد الإلكتروني
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          التخصص القانوني
+          <input type="text" name="specialty" placeholder="مثال: قضايا تجارية" />
+        </label>
+
+        <label>
+          المدينة
+          <input type="text" name="city" placeholder="مثال: الرياض" />
+        </label>
+
+        <label>
+          نبذة مختصرة عن الخبرة
+          <textarea name="bio" rows="3" placeholder="سنوات الخبرة، نوع القضايا، الاعتماد..."></textarea>
+        </label>
+
+        <button type="submit" class="btn btn-primary full-width">تسجيل</button>
+      </form>
+
+      <p id="registerMessage" class="form-message"></p>
+    </section>
+
+    <section class="side-info">
+      <h2>ماذا يستفيد المحامي من التسجيل؟</h2>
+      <ul>
+        <li>الظهور في صفحة استكشاف المحامين.</li>
+        <li>واجهة تمهيدية لملف شخصي قانوني يشبه منصات الخدمات.</li>
+        <li>إمكانية تطوير المنصة لاحقًا لاستقبال طلبات مدفوعة.</li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© 2025 منصة المحامين</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

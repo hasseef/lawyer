@@ -1,1 +1,72 @@
-<!DOCTYPE html><html lang='ar' dir='rtl'><head><meta charset='UTF-8'><title>تسجيل الدخول</title><link rel='stylesheet' href='css/style.css'></head><body><h1>تسجيل الدخول</h1></body></html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تسجيل الدخول | منصة المحامين</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="top-bar">
+  <div class="container nav-wrapper">
+    <div class="logo-area">
+      <span class="logo-icon">⚖️</span>
+      <span class="logo-text">منصة المحامين</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="lawyers.html">استكشف المحامين</a>
+      <a href="login.html" class="active">تسجيل الدخول</a>
+      <a href="register.html" class="btn btn-outline">انضم كمحامٍ</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page-main">
+  <div class="container auth-grid">
+    <section class="form-card">
+      <h1>تسجيل الدخول</h1>
+      <p class="muted">الواجهة فقط، لا يوجد تحقق فعلي بالحسابات بعد (Demo).</p>
+
+      <form id="loginForm">
+        <label>
+          البريد الإلكتروني
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          كلمة المرور
+          <input type="password" name="password" required />
+        </label>
+
+        <button type="submit" class="btn btn-primary full-width">دخول</button>
+      </form>
+
+      <p id="loginMessage" class="form-message"></p>
+
+      <p class="muted small">
+        ليس لديك حساب كمحامٍ؟
+        <a href="register.html">سجّل من هنا</a>
+      </p>
+    </section>
+
+    <section class="side-info">
+      <h2>لماذا الحساب مهم؟</h2>
+      <ul>
+        <li>متابعة طلبات الاستشارة من العملاء.</li>
+        <li>إدارة ملفك التعريفي وتخصصاتك.</li>
+        <li>مستقبلاً: إدارة العروض، الرسائل، والمدفوعات.</li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© 2025 منصة المحامين</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

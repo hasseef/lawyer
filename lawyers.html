@@ -1,1 +1,62 @@
-<!DOCTYPE html><html lang='ar' dir='rtl'><head><meta charset='UTF-8'><title>قائمة المحامين</title><link rel='stylesheet' href='css/style.css'></head><body><h1>قائمة المحامين</h1></body></html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>استكشف المحامين | منصة المحامين</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="top-bar">
+  <div class="container nav-wrapper">
+    <div class="logo-area">
+      <span class="logo-icon">⚖️</span>
+      <span class="logo-text">منصة المحامين</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="lawyers.html" class="active">استكشف المحامين</a>
+      <a href="login.html">تسجيل الدخول</a>
+      <a href="register.html" class="btn btn-outline">انضم كمحامٍ</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page-main">
+  <div class="container">
+    <header class="page-header">
+      <div>
+        <h1>استكشف المحامين</h1>
+        <p class="muted">
+          شبيه بصفحات عرض المستقلين في منصات الخدمات، مع إمكانية البحث بالتخصص أو المدينة.
+        </p>
+      </div>
+      <a href="register.html" class="btn btn-primary">أضف نفسك كمحامٍ</a>
+    </header>
+
+    <div class="filters">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="ابحث بالاسم، التخصص، أو المدينة..."
+      />
+    </div>
+
+    <section id="lawyersList" class="cards-list"></section>
+
+    <p id="noLawyersMessage" class="muted center" style="display: none;">
+      لا يوجد محامون مسجلون حتى الآن. يمكنك إضافة محامين من صفحة
+      <a href="register.html">تسجيل محامٍ</a>.
+    </p>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© 2025 منصة المحامين</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
